@@ -16,7 +16,7 @@ def get_contestant_name(data, occupation)
   data.each do |season_num,participant|
     participant.each do |part|
       if part["occupation"] == occupation
-        return part["name"].split.first
+        return part["name"]
       end
     end
   end
