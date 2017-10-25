@@ -54,5 +54,6 @@ def get_average_age_for_season(data, season)
       totalParticipants = totalParticipants + 1
     end
   end
+  binding.pry
   return totalAges/totalParticipants
 end
