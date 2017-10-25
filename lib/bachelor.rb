@@ -1,5 +1,12 @@
+require "pry"
+
 def get_first_name_of_season_winner(data, season)
-  # code here
+  hash = data[season]
+  hash.each do [character]
+    if character["status"] == "Winner"
+      return character["name"]
+    end
+  end
 end
 
 def get_contestant_name(data, occupation)
