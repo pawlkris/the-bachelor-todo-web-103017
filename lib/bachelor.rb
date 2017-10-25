@@ -53,6 +53,7 @@ def get_average_age_for_season(data, season)
       totalAges = totalAges + part["age"].to_i
       totalParticipants = totalParticipants + 1
     end
-  end
-  return (totalAges/totalParticipants).ceil
+  end 
+  average = totalAges/totalParticipants
+  return average.ceil
 end
