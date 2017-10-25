@@ -54,5 +54,5 @@ def get_average_age_for_season(data, season)
       totalParticipants = totalParticipants + 1
     end
   end
-  return totalAges/totalPartipants
+  return totalAges/totalParticipants
 end
